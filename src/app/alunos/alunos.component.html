@@ -1,0 +1,10 @@
+<h2>Detalhes do Aluno: {{aluno.nome | uppercase}}</h2>
+<div><span>id: </span>{{aluno.id}}</div>
+<div>
+    <label for="nome">Nome do Aluno: </label>
+    <input id="nome" [(ngModel)]="aluno.nome" placeholder="nome">
+</div>
+<div><span>Idade: </span>{{aluno.idade}}</div>
+<div><span>Altura: </span>{{aluno.altura}} Cm</div>
+<div><span>Peso: </span>{{aluno.peso}} Kg</div>
+<div><span>Esporte Favorito: </span>{{aluno.esporte}}</div>
