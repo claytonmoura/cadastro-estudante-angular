@@ -1,19 +1,6 @@
-<div *ngIf="selectedAluno">
+<h1>Cadastro de Alunos</h1>
+<app-aluno-detail [aluno]="selectedAluno"></app-aluno-detail>
 
-    <h2>Detalhes de {{selectedAluno.nome | uppercase}}</h2>
-    <div>
-        <label for="nome-aluno">Nome do Aluno: </label>
-        <input id="nome-aluno" [(ngModel)]="selectedAluno.nome" placeholder="nome">
-    </div>
-    <div><span>Id: </span>{{selectedAluno.id}}</div>
-    <div><span>Idade: </span>{{selectedAluno.idade}}</div>
-    <div><span>Altura: </span>{{selectedAluno.altura}}</div>
-    <div><span>Peso: </span>{{selectedAluno.peso}}</div>
-    <div><span>Esporte: </span>{{selectedAluno.esporte}}</div>
-</div>
-
-
-<h2>Alunos</h2>
 <ul class="alunos">
     <li *ngFor="let aluno of alunos" [class.selected]="aluno === selectedAluno" (click)="onSelect(aluno)">
         <span class="badge">{{aluno.id}}</span> {{aluno.nome}}

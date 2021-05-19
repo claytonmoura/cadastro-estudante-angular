@@ -1,0 +1,15 @@
+<div *ngIf="aluno">
+
+    <h2>Detalhes de {{aluno.nome | uppercase}} </h2>
+    <div><span>id: </span>{{aluno.id}}</div>
+    <div>
+        <label for="aluno-nome">Nome do Aluno: </label>
+        <input id="aluno-nome" [(ngModel)]="aluno.nome" placeholder="nome">
+        <div><span>Idade: </span>{{aluno.idade}} Anos</div>
+        <div><span>Altura: </span>{{aluno.altura}} Cm</div>
+        <div><span>Peso: </span>{{aluno.peso}} Kg</div>
+        <div><span>Esporte: </span>{{aluno.esporte}}</div>
+
+    </div>
+
+</div>
