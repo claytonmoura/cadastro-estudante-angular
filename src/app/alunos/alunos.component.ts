@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Aluno } from '../aluno';
-import { ALUNOS } from '../mock-alunos';
 import { AlunoService } from '../aluno.service';
 import { MessageService } from '../message.service';
 
@@ -21,6 +20,22 @@ export class AlunosComponent implements OnInit {
   getAlunos(): void {
     this.alunoService.getAlunos()
       .subscribe(alunos => this.alunos = alunos);
+  }
+
+  add(nome: string): void {
+    nome = nome.trim();
+    if (!nome) {
+      return;
+    }
+    this.alunoService.addAluno({ nome } as Aluno)
+      .subscribe(aluno => {
+        this.alunos.push(aluno);
+      });
+  }
+  
+  delete(aluno: Aluno): void {
+    this.alunos = this.alunos.filter(h => h !== aluno);
+    this.alunoService.deleteAluno(aluno.id).subscribe();
   }
 }
 

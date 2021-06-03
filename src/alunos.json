@@ -1,0 +1,83 @@
+{
+    "alunos": [{
+            "id": 11,
+            "nome": "João",
+            "idade": 18,
+            "altura": 165,
+            "peso": 65,
+            "esporte": "Futebol"
+        },
+        {
+            "id": 12,
+            "nome": "Maria",
+            "idade": 12,
+            "altura": 155,
+            "peso": 67,
+            "esporte": "Vôlei"
+        },
+        {
+            "id": 13,
+            "nome": "José",
+            "idade": 21,
+            "altura": 166,
+            "peso": 65,
+            "esporte": "Futebol"
+        },
+        {
+            "id": 14,
+            "nome": "Joaquim",
+            "idade": 22,
+            "altura": 168,
+            "peso": 67,
+            "esporte": "Futebol"
+        },
+        {
+            "id": 15,
+            "nome": "Joana",
+            "idade": 18,
+            "altura": 165,
+            "peso": 65,
+            "esporte": "Vôlei"
+        },
+        {
+            "id": 16,
+            "nome": "Carlos",
+            "idade": 19,
+            "altura": 165,
+            "peso": 55,
+            "esporte": "Xadrez"
+        },
+        {
+            "id": 17,
+            "nome": "Janete",
+            "idade": 18,
+            "altura": 165,
+            "peso": 65,
+            "esporte": "Futebol"
+        },
+        {
+            "id": 18,
+            "nome": "Cleide",
+            "idade": 17,
+            "altura": 165,
+            "peso": 68,
+            "esporte": "Xadrez"
+        },
+        {
+            "id": 19,
+            "nome": "Gilmar",
+            "idade": 23,
+            "altura": 165,
+            "peso": 75,
+            "esporte": "Natação"
+        },
+        {
+            "id": 20,
+            "nome": "Antônio",
+            "idade": 25,
+            "altura": 175,
+            "peso": 52,
+            "esporte": "Futebol"
+        }
+    ]
+}

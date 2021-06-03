@@ -29,4 +29,10 @@ export class AlunoDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  save(): void {
+    if (this.aluno) {
+      this.alunoService.updateAluno(this.aluno)
+        .subscribe(() => this.goBack());
+    }
+  }
 }
