@@ -10,9 +10,6 @@ import { MessageService } from '../message.service';
   styleUrls: ['./alunos.component.css']
 })
 export class AlunosComponent implements OnInit {
-
-  selectedAluno?: Aluno;
-
   alunos: Aluno[] = [];
 
   constructor(private alunoService: AlunoService, private messageService: MessageService) { }
@@ -20,16 +17,10 @@ export class AlunosComponent implements OnInit {
   ngOnInit() {
     this.getAlunos();
   }
-  
-  onSelect(aluno: Aluno): void {
-    this.selectedAluno = aluno;
-    this.messageService.add(`AlunosComponent: Selected aluno id = ${aluno.id}`);
-  }
 
   getAlunos(): void {
     this.alunoService.getAlunos()
-        .subscribe(alunos => this.alunos = alunos);
+      .subscribe(alunos => this.alunos = alunos);
   }
-
 }
 

@@ -1,4 +1,4 @@
-/* AlunosComponent's private CSS styles */
+/* HeroesComponent's private CSS styles */
 
 .alunos {
     margin: 0 0 2em 0;
@@ -8,35 +8,34 @@
 }
 
 .alunos li {
-    cursor: pointer;
     position: relative;
-    left: 0;
+    cursor: pointer;
+}
+
+.alunos li:hover {
+    left: .1em;
+}
+
+.alunos a {
+    color: #333;
+    text-decoration: none;
     background-color: #EEE;
     margin: .5em;
     padding: .3em 0;
     height: 1.6em;
     border-radius: 4px;
+    display: block;
+    width: 100%;
 }
 
-.alunos li:hover {
+.alunos a:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
-    left: .1em;
 }
 
-.alunos li.selected {
-    background-color: black;
-    color: white;
-}
-
-.alunos li.selected:hover {
-    background-color: #505050;
-    color: white;
-}
-
-.alunos li.selected:active {
-    background-color: black;
-    color: white;
+.alunos a:active {
+    background-color: #525252;
+    color: #fafafa;
 }
 
 .alunos .badge {
@@ -50,10 +49,8 @@
     left: -1px;
     top: -4px;
     height: 1.8em;
+    min-width: 16px;
+    text-align: right;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
-}
-
-input {
-    padding: .5rem;
 }
